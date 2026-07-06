@@ -14,27 +14,27 @@ class ExceptionA extends Exception{
                 throw new ExceptionA("This is ExceptionA");
             }
             catch(Exception e){
-                System.out.println("Caught:"+e.getMessage());
+                System.out.println("Caught: "+e.getMessage());
             }
             try {
                 throw new ExceptionB("This is ExceptionB");
             }
             catch (Exception e)
             {
-                System.out.println("Caught:"+e.getMessage());
+                System.out.println("Caught: "+e.getMessage());
             }
             try{
                 throw new java.io.IOException("This is an IOException");
             }
             catch(Exception e){
-                System.out.println("Caught:"+e.getMessage());
+                System.out.println("Caught: "+e.getMessage());
             }
             try{
                 String nullString=null;
                 System.out.println(nullString.length());
             }
             catch(Exception err){
-                System.out.println("Caught:null");
+                System.out.println("Caught: null");
             }
 
         }
